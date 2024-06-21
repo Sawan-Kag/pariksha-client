@@ -1,0 +1,32 @@
+<section class="bg-gray-100 min-h-screen flex box-border justify-center  items-center"
+  style="min-height: calc(100vh - 64px);">
+  <div class="rounded-2xl flex max-w-3xl pt-0 pb-2 items-center bg-slate-200">
+    <div class="md:w-1/2 mx-4">
+      <h2 class="font-bold text-3xl text-center text-[#002D74]">Login</h2>
+      <form (ngSubmit)="formSubmit()" class="flex flex-col gap-4">
+        <input class="p-2 rounded-xl border" [(ngModel)]="loginData.username" required type="text" name="userName"
+          placeholder="Username">
+        <div class="relative">
+          <input class="p-2 rounded-xl border w-full" [(ngModel)]="loginData.password" required type="password"
+            name="password" id="password" placeholder="Password">
+        </div>
+        <button
+          class="bg-[#002D74] text-white py-2 rounded-xl hover:scale-105 duration-300 hover:bg-[#206ab1] font-medium"
+          type="submit">Login</button>
+      </form>
+      <div class="mt-3 items-center text-black">
+        <p class="text-center text-sm">OR</p>
+      </div>
+      <div class="mt-2 text-sm flex justify-center items-center container-mr">
+        <button
+          class="hover:border register text-white bg-[#002D74] hover:border-gray-400 rounded-xl py-2 hover:scale-110 hover:bg-[#206ab1] font-semibold duration-300 w-full"
+          [routerLink]="'/signup'">Register</button>
+      </div>
+    </div>
+    <div class="md:block hidden w-1/2 pt-4 pr-3">
+      <img class="rounded-2xl max-h-[400px]"
+        src="https://images.unsplash.com/photo-1557989048-03456d01a26e?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="login form image">
+    </div>
+  </div>
+</section>

@@ -1,0 +1,104 @@
+<!-- <div class="bootstrap-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <mat-card>
+          <div class="container text-center">
+            <img src="../../../assets/logo.png" alt="" />
+          </div>
+
+          <h1 class="text-center">Register Here !!</h1> -->
+
+<!-- {{ user | json }} -->
+
+<!-- <form (ngSubmit)="formSubmit()"> -->
+<!-- Username field -->
+<!-- <mat-form-field class="full-width" appearance="outline">
+              <mat-label>User Name</mat-label>
+              <input required [(ngModel)]="user.username" name="username" matInput placeholder="Enter here" />
+              <mat-hint>Username must be unique !!</mat-hint>
+            </mat-form-field> -->
+
+<!-- Password field -->
+<!-- <mat-form-field class="full-width" appearance="outline">
+              <mat-label>User Password</mat-label>
+              <input required [(ngModel)]="user.password" name="password" type="password" matInput
+                placeholder="Enter here" />
+            </mat-form-field> -->
+
+<!-- first name  -->
+<!-- <mat-form-field class="full-width" appearance="outline">
+              <mat-label>First Name</mat-label>
+              <input required [(ngModel)]="user.fName" name="firstName" matInput placeholder="Enter here" />
+            </mat-form-field> -->
+
+<!-- lastname -->
+<!-- <mat-form-field class="full-width" appearance="outline">
+              <mat-label>Last Name</mat-label>
+              <input required [(ngModel)]="user.lName" name="lastName" matInput placeholder="Enter here" />
+            </mat-form-field> -->
+
+<!-- email -->
+<!-- <mat-form-field class="full-width" appearance="outline">
+  <mat-label>Email Address</mat-label>
+  <input required [(ngModel)]="user.email" name="email" type="email" matInput placeholder="Enter here" />
+</mat-form-field> -->
+
+<!-- phone number -->
+<!-- <mat-form-field class="full-width" appearance="outline">
+  <mat-label>Phone Number</mat-label>
+  <input required [(ngModel)]="user.phone" name="phone" type="number" matInput placeholder="Enter here" />
+</mat-form-field> -->
+
+<!-- <div class="container text-center">
+  <button type="submit" mat-raised-button color="primary">
+    Register
+  </button>
+  <button type="button" style="margin-left: 20px" mat-raised-button color="accent">
+    Clear
+  </button>
+</div>
+</form>
+</mat-card>
+</div>
+</div>
+</div>
+</div> -->
+<section class="bg-gray-100 min-h-screen flex box-border justify-center items-center"
+  style="min-height: calc(100vh - 64px);">
+  <div class="rounded-2xl flex max-w-3xl pt-0 pb-2 items-center bg-slate-200">
+    <div class="px-4">
+      <h2 class="font-bold text-xl text-center text-[#002D74]">Register</h2>
+      <form (ngSubmit)="formSubmit()" class="flex flex-col gap-4">
+        <input class="p-2 rounded-xl border" [(ngModel)]="user.username" type="text" name="username"
+          placeholder="Username">
+        <div class="flex flex-col md:flex-row gap-4">
+          <input class="p-2 rounded-xl border w-full" [(ngModel)]="user.fName" type="text" name="fName"
+            placeholder="First Name">
+          <input class="p-2 rounded-xl border w-full" type="text" [(ngModel)]="user.lName" name="lName"
+            placeholder="Last Name">
+        </div>
+        <div class="flex flex-col md:flex-row gap-4">
+          <input class="p-2 rounded-xl border w-full" type="email" [(ngModel)]="user.email" name="email"
+            placeholder="Email">
+          <input class="p-2 rounded-xl border w-full" type="number" [(ngModel)]="user.phone" name="phone"
+            placeholder="Phone Number">
+        </div>
+        <div class="flex flex-col md:flex-row gap-4">
+          <input class="p-2 rounded-xl border w-full" type="password" [(ngModel)]="user.password" name="password"
+            placeholder="Password">
+          <input class="p-2 rounded-xl border w-full" type="password" name="confirmPassword"
+            placeholder="Confirm Password">
+        </div>
+        <button
+          class="bg-[#002D74] text-white py-2 rounded-xl hover:scale-105 duration-300 hover:bg-[#206ab1] font-medium"
+          type="submit">Register</button>
+      </form>
+    </div>
+    <div class="md:block hidden w-1/2 pt-4">
+      <img class="rounded-2xl max-h-[400px]"
+        src="https://images.unsplash.com/photo-1557989048-03456d01a26e?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="login form image">
+    </div>
+  </div>
+</section>

@@ -1,0 +1,19 @@
+<mat-card>
+  <h1 style="padding: 20px 20px;">All Categories</h1>
+  <mat-list>
+    @for (folder of categories; track folder) {
+    <mat-list-item>
+      <mat-icon matListItemIcon>category</mat-icon>
+      <div matListItemTitle>{{folder.title}}</div>
+      <div matListItemLine>{{folder.description}}</div>
+    </mat-list-item>
+    }
+    <mat-divider></mat-divider>
+  </mat-list>
+
+  <div class="container text-center mt20 p-2">
+    <button routerLink="/admin/add-category" mat-raised-button color="accent">
+      Add New Category
+    </button>
+  </div>
+</mat-card>
